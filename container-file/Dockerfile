@@ -1,11 +1,11 @@
 FROM ubi-micro:latest
 
-ARG ARTIFACT_URL=https://incorrect-url
+ARG BUILDREPO=https://incorrect-url
 
 WORKDIR /opt/app-root
 
 # Download the application binary during build
-ADD ${ARTIFACT_URL} /opt/app-root/postal-1.0 
+ADD ${BUILDREPO} /opt/app-root/postal-1.0 
 
 USER 0
 
