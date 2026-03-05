@@ -5,15 +5,12 @@ metadata:
 labels:
   app: old
   key: value
-  app: catalog-ui
-  group: catalog
+ 
 
   
 parameters:
 # 🔹 NEW PARAMETER (must be added at beginning)
-- name: REGISTRY_URL
-  description: Container images registry URL
-  required: true
+
     #- description: Myapp configuration data
     #  name: MYPARAMETER
     # required: true
